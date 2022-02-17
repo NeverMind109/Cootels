@@ -2,25 +2,25 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-		&__image {
+	&__image {
             height: 576px;
-		}
-        &__img {
+	}
+      &__img {
             object-fit: cover;
             border-radius: 4px;
-        }
-        &__info {
+      }
+      &__info {
             max-width: 690px;
             text-align: left;
-        }
-		&__title {
+      }
+	&__title {
             text-align: left;
             margin-bottom: 24px;
-		}
-		&__text {
+	}
+	&__text {
             margin-bottom: 16px;
-		}
-		&__button {
+	}
+	&__button {
             margin-top: 16px;
-		}
+	}
 }
