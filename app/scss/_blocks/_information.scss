@@ -1,0 +1,26 @@
+.information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+		&__image {
+            height: 576px;
+		}
+        &__img {
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        &__info {
+            max-width: 690px;
+            text-align: left;
+        }
+		&__title {
+            text-align: left;
+            margin-bottom: 24px;
+		}
+		&__text {
+            margin-bottom: 16px;
+		}
+		&__button {
+            margin-top: 16px;
+		}
+}
