@@ -40,7 +40,8 @@ body {
     margin: 0 auto;
 }
 .section {
-    margin: 80px 0;
+    margin: 80px 0 0;
+    padding: 0 0 80px;
 }
 .section-title {
     font-family: 'Montserrat', sans-serif;
@@ -53,6 +54,7 @@ body {
 }
 .paragraph {
     max-width: 584px;
+    word-wrap: break-word;
 }
 .logo {
     width: 123px;

@@ -31,7 +31,7 @@ html(lang="en")
                     .main-section__info
                         h1.main-section__title Nature, Warmth, and Beauty in One Space
                         p.main-section__text One place to release all the stress, bring back happines, and get back to nature. We provide the best room and nature for you. Come visit us anytime you want.
-                        a.button.main-section__btn Reservation
+                        a.button.main-section__btn(href="#") Reservation
                     .main-section__images
                         .main-section__image.main-section__images-left
                             img.main-section__img(src="images/left-img.jpg" alt="Left part of hotel image" width = "180" height = "588")
@@ -60,6 +60,33 @@ html(lang="en")
                             p.paragraph.advantages__text We served 100% organic, low process and delicious food. We allow our guest to have breakfast or dinner request.What ever made your taste buds happy.
                         .advantages__image
                             img.advantages__img(src="images/advantages-food.jpg" alt="Cabin Activities" width= "384" height = "384")
+                section.section.rooms(id = "Rooms")
+                    .rooms__header
+                        h2.section-title.rooms__title Many Rooms to Choose
+                        p.paragraph.rooms__text There is a room for every needs. We have room for individuals until family size, we also have a cabin for more private experience
+                        a.button.rooms__button(href='#Reservation') Explore more
+                    .rooms__cards
+                        .rooms__card
+                            .rooms__card-image
+                                img.rooms__card-img(src="images/single-room.jpg" alt="Single Room" width="384" height="489")
+                            h4.rooms__card-title Single Room
+                            p.rooms__card-text Best for a brave lone wolf who need comfort and quiet quality time, but you still have a chance to meet others. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus reprehenderit neque possimus dolorem, aliquid tenetur.
+                            .rooms__card-link-wrapper
+                                a.rooms__card-link(href="#") Learn more
+                        .rooms__card
+                            .rooms__card-image
+                                img.rooms__card-img(src="images/double-room.jpg" alt="Single Room" width="384" height="489")
+                            h4.rooms__card-title Double Room
+                            p.rooms__card-text Best for couple, seek happiness in intimacy without worry of being disturbed. Feel the whole world just for you two
+                            .rooms__card-link-wrapper
+                                a.rooms__card-link(href="#") Learn more
+                        .rooms__card
+                            .rooms__card-image
+                                img.rooms__card-img(src="images/cottage.jpg" alt="Single Room" width="384" height="489")
+                            h4.rooms__card-title Cottage
+                            p.rooms__card-text Best for family or group. One cootage can fit up to 5 people. Made stronger bond with your family or friends
+                            .rooms__card-link-wrapper
+                                a.rooms__card-link(href="#") Learn more
 
 
         script(src="js/main.min.js")
