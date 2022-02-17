@@ -8,6 +8,21 @@ html(lang="en")
         link(rel="preconnect" href="https://fonts.googleapis.com")
         link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
         link(href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet")
+        link(rel="stylesheet" href="css/style.min.css")
     body
-
+        header.header(id="header")
+            .container
+                .header__wrapper
+                    a.logo(href="#header")
+                        img.logo__img(src="images/logo.svg" alt="Logo" width = "123", height= "39")
+                    nav.menu
+                        ul.menu__list
+                            li.menu__list-item
+                                a.menu__list-link(href="#Rooms") Rooms
+                            li.menu__list-item
+                                a.menu__list-link(href="#Reservation") Reservation
+                            li.menu__list-item
+                                a.menu__list-link(href="#Contacs") Contacs
+                    .header__button
+                        a.button(href="questions").header__start Get Started
         script(src="js/main.min.js")

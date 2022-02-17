@@ -51,6 +51,28 @@ body {
     letter-spacing: -0.01em;
     color: #192252;
 }
+.logo {
+    width: 123px;
+    height: 39px;
+}
+.menu {
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__list-link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #192252;
+        &:hover {
+            color: $text-color;
+        }
+    }
+}
+.menu__list-item + .menu__list-item {
+    margin-left: 32px;
+}
 .button {
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -58,9 +80,7 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
-    background: #0E1734;
+    background-color: #0E1734;
     border-radius: 4px;
     padding: 16px 32px;
-    border: none;
-    cursor: pointer;
 }
