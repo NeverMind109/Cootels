@@ -1,69 +1,69 @@
 .rooms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__header {
+    text-align: center;
+    margin-bottom: 88px;
+  }
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__text {
+    margin-bottom: 32px;
+  }
+  &__cards {
+    display: flex;
+  }
+  &__card {
+    height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-	&__header {
-        text-align: center;
-        margin-bottom: 88px;
-	}
-	&__title {
-        margin-bottom: 24px;
-	}
-	&__text {
-        margin-bottom: 32px;
-	}
-	&__cards {
-        display: flex;
-	}
-	&__card {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: stretch;
-        max-width: 384px;
-        text-align: left;
-	}
-	&__card-image {
-        height: 489px;
-        margin-bottom: 32px;
-	}
-	&__card-img {
-        object-fit: cover;
-	}
-	&__card-title {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 36px;
-        text-align: left;
-        color: #000000;
-        margin-bottom: 16px;
-	}
-	&__card-text {
-        height: 100%;
-        word-wrap: break-word;
-	}
-    &__card-link-wrapper {
-        margin-top: 32px;
+    justify-content: stretch;
+    max-width: 384px;
+    text-align: left;
+  }
+  &__card-image {
+    height: 489px;
+    margin-bottom: 32px;
+  }
+  &__card-img {
+    object-fit: cover;
+  }
+  &__card-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 16px;
+  }
+  &__card-text {
+    height: 100%;
+    word-wrap: break-word;
+  }
+  &__card-link-wrapper {
+    margin-top: 32px;
+  }
+  &__card-link {
+    display: inline-block;
+    position: relative;
+    color: #424f7b;
+    padding-right: 30px;
+    &::after {
+      position: absolute;
+      content: "";
+      background: url("../images/link-arrow.svg") no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 16px;
+      height: 13px;
+      top: 8px;
+      right: 0;
     }
-	&__card-link {
-        display: inline-block;
-        position: relative;
-        color: #424F7B;
-        padding-right: 30px;
-        &::after {
-            position: absolute;
-            content: '';
-            background: url('../images/link-arrow.svg') no-repeat;
-            background-position: center;
-            background-size: cover;
-            width: 16px;
-            height: 13px;
-            top: 8px;
-            right: 0;
-        }
-	}
+  }
 }
 .rooms__card + .rooms__card {
-    margin-left: 24px;
+  margin-left: 24px;
 }

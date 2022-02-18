@@ -1,32 +1,32 @@
 .advantages {
-    max-width: 1094px;
+  max-width: 1094px;
+  display: flex;
+  flex-direction: column;
+  &__wrapper {
     display: flex;
-    flex-direction: column;
-    &__wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__activities {
+    margin-bottom: 32px;
+  }
+  &__info {
+    max-width: 584px;
+    text-align: left;
+  }
+  &__title {
+    margin-bottom: 24px;
+    text-align: left;
+  }
+  &__image {
+    height: 384px;
+  }
+  &__img {
+    object-fit: cover;
+  }
+  &__food {
+    &-info {
+      order: 1;
     }
-	&__activities {
-        margin-bottom: 32px;
-	}
-	&__info {
-        max-width: 584px;
-        text-align: left;
-	}
-	&__title {
-        margin-bottom: 24px;
-        text-align: left;
-	}
-	&__image {
-        height: 384px;
-	}
-	&__img {
-        object-fit: cover;
-	}
-	&__food {
-        &-info {
-            order: 1;
-        }
-	}
+  }
 }

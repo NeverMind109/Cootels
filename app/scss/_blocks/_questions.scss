@@ -1,98 +1,98 @@
 .questions {
+  display: flex;
+  justify-content: space-between;
+  &__info {
+    padding-top: 80px;
+    max-width: 407px;
+    text-align: left;
+  }
+  &__suptitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #424f7b;
+    margin-bottom: 12px;
+  }
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__text {
+    max-width: 384px;
+    margin-bottom: 32px;
+    word-wrap: break-word;
+  }
+  &__buttons {
     display: flex;
-    justify-content: space-between;
-	&__info {
-        padding-top: 80px;
-        max-width: 407px;
-        text-align: left;
-	}
-	&__suptitle {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        color: #424F7B;
-        margin-bottom: 12px;
-	}
-	&__title {
-        margin-bottom: 24px;
-	}
-	&__text {
-        max-width: 384px;
-        margin-bottom: 32px;
-        word-wrap: break-word;
-	}
-	&__buttons {
-        display: flex;
-        align-items: center;
-	}
-	&__contact {
-        margin-right: 24px;
-	}
-	&__more {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-        color: $btn-bg-color
-	}
-	&__accordion {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        counter-reset: my-counter;
-	}
-	&__question {
-        position: relative;
-        width: 588px;
-        padding: 0 36px 8px;
-        margin-bottom: 24px;
-        box-shadow: (0px 4px 30px rgba(0, 0, 0, 0.07));
-        background: #FFFFFF;
-        border-radius: 4px;
-        counter-increment: my-counter;
-        &::before {
-            content: counter(my-counter)". ";
-            position: absolute;
-            height: 36px;
-            left: 36px;
-            top: 32px;
-            color: #424F7B;
-            font-size: 24px;
-            font-weight: 600;
-            line-height: 36px;
-        }
-	}
-    &__accordion-title {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 36px;
-        text-align: center;
-        color: #424F7B;
-        padding: 32px 0 24px 38px;
-        text-align: left;
-        &::after {
-            content: '';
-            position: absolute;
-            background: url('../images/accordion-arrow-down.svg') no-repeat;
-            background-size: cover;
-            background-position: center;
-            width: 40px;
-            height: 40px;
-            z-index: 3;
-            right: 36px;
-            top: 30px;
-            cursor: pointer;
-            transition: background .3s;
-        }
+    align-items: center;
+  }
+  &__contact {
+    margin-right: 24px;
+  }
+  &__more {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $btn-bg-color;
+  }
+  &__accordion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    counter-reset: my-counter;
+  }
+  &__question {
+    position: relative;
+    width: 588px;
+    padding: 0 36px 8px;
+    margin-bottom: 24px;
+    box-shadow: (0px 4px 30px rgba(0, 0, 0, 0.07));
+    background: #ffffff;
+    border-radius: 4px;
+    counter-increment: my-counter;
+    &::before {
+      content: counter(my-counter) ". ";
+      position: absolute;
+      height: 36px;
+      left: 36px;
+      top: 32px;
+      color: #424f7b;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 36px;
     }
-    &__accordion-text {
-        display: none;
-        padding-bottom: 36px;
-        word-wrap: break-word;
+  }
+  &__accordion-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #424f7b;
+    padding: 32px 0 24px 38px;
+    text-align: left;
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("../images/accordion-arrow-down.svg") no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 40px;
+      height: 40px;
+      z-index: 3;
+      right: 36px;
+      top: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
     }
+  }
+  &__accordion-text {
+    display: none;
+    padding-bottom: 36px;
+    word-wrap: break-word;
+  }
 }
 .accordion--active {
-        &::after {
-            background: url('../images/accordion-arrow-up.svg') no-repeat;
-        }
+  &::after {
+    background: url("../images/accordion-arrow-up.svg") no-repeat;
+  }
 }
