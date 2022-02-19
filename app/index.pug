@@ -18,20 +18,20 @@ html(lang="en")
                     nav.menu
                         ul.menu__list
                             li.menu__list-item
-                                a.menu__list-link(href="#rooms") Rooms
+                                a.menu__list-link(href="#rooms").scroll-to Rooms
                             li.menu__list-item
-                                a.menu__list-link(href="#questions") Reservation
+                                a.menu__list-link(href="#questions").scroll-to Reservation
                             li.menu__list-item
-                                a.menu__list-link(href="#contacs") Contacs
+                                a.menu__list-link(href="#footer").scroll-to Contacs
                     .header__button
-                        a.button(href="#questions").header__start Get Started
+                        a.button(href="#questions").header__start.scroll-to Get Started
         main.content
             .container
                 section.section.hero
                     .hero__info
                         h1.hero__title Nature, Warmth, and Beauty in One Space
                         p.hero__text One place to release all the stress, bring back happines, and get back to nature. We provide the best room and nature for you. Come visit us anytime you want.
-                        a.button.hero__btn(href="#") Reservation
+                        a.button.hero__btn(href="#").scroll-to Reservation
                     .hero__images
                         .hero__image.hero__images-left
                             img.hero__img(src="images/left-img.jpg" alt="Left part of hotel image" width = "180" height = "588")
@@ -64,7 +64,7 @@ html(lang="en")
                     .rooms__header
                         h2.section-title.rooms__title Many Rooms to Choose
                         p.paragraph.rooms__text There is a room for every needs. We have room for individuals until family size, we also have a cabin for more private experience
-                        a.button.rooms__button(href='#questions') Explore more
+                        a.button.rooms__button(href='#questions').scroll-to Explore more
                     .rooms__cards
                         .rooms__card
                             .rooms__card-image
@@ -93,7 +93,7 @@ html(lang="en")
                         h2.section-title.questions__title How to Get My Room?
                         p.questions__text You can contact us by phone or email us. Easily tap the contact button below and it will take you to our contact point
                         .questions__buttons
-                            a.button.questions__contact(href="#") Contact us
+                            a.button.questions__contact(href="#footer").scroll-to Contact us
                             a.questions__more(href="#") Explore more room
                     ol.questions__accordion
                         li.questions__question
@@ -128,6 +128,39 @@ html(lang="en")
                                 img.reviews__img(src="images/reviews-avatar-4.jpg" alt="Avatar" width="120" height="120")
                             .reviews__text “Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illo a assumenda corporis odit sed tenetur officia magnam iure totam.”
                             .reviews__name Ed Aguirre
-
-
+        footer.footer(id="footer")
+            .container
+                .footer__wrapper
+                    .footer__column.footer__info
+                        a.logo(href="#header").scroll-to
+                            img.logo__img(src="images/logo-footer.svg" alt="Logo" width = "124", height= "39")
+                        p.footer__text Your Best Private Hideway From Crowd. Back to Nature.
+                        .social
+                            a.twitter(href="#").social-link
+                            a.instagram(href="#").social-link
+                            a.facebook(href="#").social-link
+                    .footer__column.footer__rooms
+                        ul.footer__list Rooms
+                            li.footer__item
+                                a.footer__item-link(href="#") Single Room
+                            li.footer__item
+                                a.footer__item-link(href="#") Double Room
+                            li.footer__item
+                                a.footer__item-link(href="#") Cabin
+                            li.footer__item
+                                a.footer__item-link(href="#") Custom Room
+                    .footer__column.footer__reservation
+                        ul.footer__list Reservation
+                            li.footer__item
+                                a.footer__item-link(href="#") See the Steps
+                            li.footer__item
+                                a.footer__item-link(href="#") Best Time
+                    .footer__column.footer__contact
+                        ul.footer__list Contact
+                            li.footer__item
+                                a.footer__item-link(href="#") Our Number
+                            li.footer__item
+                                a.footer__item-link(href="#") Our Email
+                            li.footer__item
+                                a.footer__item-link(href="#") Our Location
         script(src="js/main.min.js")

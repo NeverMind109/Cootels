@@ -16,12 +16,12 @@
         <div class="header__wrapper"><a class="logo" href="#header"><img class="logo__img" src="images/logo.svg" alt="Logo" width="123" height="39"></a>
           <nav class="menu">
             <ul class="menu__list">
-              <li class="menu__list-item"><a class="menu__list-link" href="#rooms">Rooms</a></li>
-              <li class="menu__list-item"><a class="menu__list-link" href="#questions">Reservation</a></li>
-              <li class="menu__list-item"><a class="menu__list-link" href="#contacs">Contacs</a></li>
+              <li class="menu__list-item"><a class="menu__list-link scroll-to" href="#rooms">Rooms</a></li>
+              <li class="menu__list-item"><a class="menu__list-link scroll-to" href="#questions">Reservation</a></li>
+              <li class="menu__list-item"><a class="menu__list-link scroll-to" href="#footer">Contacs</a></li>
             </ul>
           </nav>
-          <div class="header__button"><a class="button header__start" href="#questions">Get Started</a></div>
+          <div class="header__button"><a class="button header__start scroll-to" href="#questions">Get Started</a></div>
         </div>
       </div>
     </header>
@@ -30,7 +30,7 @@
         <section class="section hero">
           <div class="hero__info">
             <h1 class="hero__title">Nature, Warmth, and Beauty in One Space</h1>
-            <p class="hero__text">One place to release all the stress, bring back happines, and get back to nature. We provide the best room and nature for you. Come visit us anytime you want.</p><a class="button hero__btn" href="#">Reservation</a>
+            <p class="hero__text">One place to release all the stress, bring back happines, and get back to nature. We provide the best room and nature for you. Come visit us anytime you want.</p><a class="button hero__btn scroll-to" href="#">Reservation</a>
           </div>
           <div class="hero__images">
             <div class="hero__image hero__images-left"><img class="hero__img" src="images/left-img.jpg" alt="Left part of hotel image" width="180" height="588"></div>
@@ -65,7 +65,7 @@
         <section class="section rooms" id="rooms">
           <div class="rooms__header">
             <h2 class="section-title rooms__title">Many Rooms to Choose</h2>
-            <p class="paragraph rooms__text">There is a room for every needs. We have room for individuals until family size, we also have a cabin for more private experience</p><a class="button rooms__button" href="#questions">Explore more</a>
+            <p class="paragraph rooms__text">There is a room for every needs. We have room for individuals until family size, we also have a cabin for more private experience</p><a class="button rooms__button scroll-to" href="#questions">Explore more</a>
           </div>
           <div class="rooms__cards">
             <div class="rooms__card">
@@ -93,7 +93,7 @@
             <h5 class="questions__suptitle">Start your journey!</h5>
             <h2 class="section-title questions__title">How to Get My Room?</h2>
             <p class="questions__text">You can contact us by phone or email us. Easily tap the contact button below and it will take you to our contact point</p>
-            <div class="questions__buttons"><a class="button questions__contact" href="#">Contact us</a><a class="questions__more" href="#">Explore more room</a></div>
+            <div class="questions__buttons"><a class="button questions__contact scroll-to" href="#footer">Contact us</a><a class="questions__more" href="#">Explore more room</a></div>
           </div>
           <ol class="questions__accordion">
             <li class="questions__question">
@@ -137,6 +137,37 @@
         </section>
       </div>
     </main>
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__column footer__info"><a class="logo scroll-to" href="#header"><img class="logo__img" src="images/logo-footer.svg" alt="Logo" width="124" height="39"></a>
+            <p class="footer__text">Your Best Private Hideway From Crowd. Back to Nature.</p>
+            <div class="social"><a class="twitter social-link" href="#"></a><a class="instagram social-link" href="#"></a><a class="facebook social-link" href="#"></a></div>
+          </div>
+          <div class="footer__column footer__rooms">
+            <ul class="footer__list">Rooms
+              <li class="footer__item"><a class="footer__item-link" href="#">Single Room</a></li>
+              <li class="footer__item"><a class="footer__item-link" href="#">Double Room</a></li>
+              <li class="footer__item"><a class="footer__item-link" href="#">Cabin</a></li>
+              <li class="footer__item"><a class="footer__item-link" href="#">Custom Room</a></li>
+            </ul>
+          </div>
+          <div class="footer__column footer__reservation">
+            <ul class="footer__list">Reservation
+              <li class="footer__item"><a class="footer__item-link" href="#">See the Steps</a></li>
+              <li class="footer__item"><a class="footer__item-link" href="#">Best Time</a></li>
+            </ul>
+          </div>
+          <div class="footer__column footer__contact">
+            <ul class="footer__list">Contact
+              <li class="footer__item"><a class="footer__item-link" href="#">Our Number</a></li>
+              <li class="footer__item"><a class="footer__item-link" href="#">Our Email</a></li>
+              <li class="footer__item"><a class="footer__item-link" href="#">Our Location</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="js/main.min.js"></script>
   </body>
 </html>

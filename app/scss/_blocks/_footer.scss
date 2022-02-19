@@ -1,0 +1,69 @@
+.footer {
+  background: #0b265a;
+  padding: 120px 0;
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+  &__column {
+  }
+  &__text {
+    max-width: 186px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #d9dbde;
+    margin: 13px 0 36px;
+  }
+  &__info {
+    margin-right: auto;
+  }
+  &__rooms {
+    margin-right: 100px;
+  }
+  &__reservation {
+    margin-right: 141px;
+  }
+  &__contact {
+    margin-right: 65px;
+  }
+  &__list {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+  }
+  &__item {
+  }
+  &__item-link {
+    font-weight: 400;
+    color: #d9dbde;
+    margin-top: 24px;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+.social {
+  display: flex;
+}
+.social-link {
+  background-size: cover;
+  background-position: center;
+  margin-right: 24px;
+}
+.twitter {
+  background: url("../images/twitter-logo.svg") no-repeat;
+  width: 32px;
+  height: 26px;
+}
+.instagram {
+  background: url("../images/instagram-logo.svg") no-repeat;
+  width: 32px;
+  height: 32px;
+}
+.facebook {
+  background: url("../images/facebook-logo.svg") no-repeat;
+  width: 16px;
+  height: 32px;
+}
