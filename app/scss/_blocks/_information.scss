@@ -6,8 +6,10 @@
     height: 576px;
   }
   &__img {
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 4px;
+    width: 384px;
+    height: 576px;
   }
   &__info {
     max-width: 690px;

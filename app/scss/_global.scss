@@ -96,3 +96,26 @@ body {
   border-radius: 4px;
   padding: 16px 32px;
 }
+.social {
+  display: flex;
+}
+.social-link {
+  background-size: cover;
+  background-position: center;
+  margin-right: 24px;
+}
+.twitter {
+  background: url("../images/twitter-logo.svg") no-repeat;
+  width: 32px;
+  height: 26px;
+}
+.instagram {
+  background: url("../images/instagram-logo.svg") no-repeat;
+  width: 32px;
+  height: 32px;
+}
+.facebook {
+  background: url("../images/facebook-logo.svg") no-repeat;
+  width: 16px;
+  height: 32px;
+}

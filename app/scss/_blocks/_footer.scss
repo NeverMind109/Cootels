@@ -5,8 +5,6 @@
     display: flex;
     align-items: flex-start;
   }
-  &__column {
-  }
   &__text {
     max-width: 186px;
     font-size: 16px;
@@ -33,8 +31,6 @@
     letter-spacing: 0.01em;
     color: #ffffff;
   }
-  &__item {
-  }
   &__item-link {
     font-weight: 400;
     color: #d9dbde;
@@ -43,27 +39,4 @@
       color: #fff;
     }
   }
-}
-.social {
-  display: flex;
-}
-.social-link {
-  background-size: cover;
-  background-position: center;
-  margin-right: 24px;
-}
-.twitter {
-  background: url("../images/twitter-logo.svg") no-repeat;
-  width: 32px;
-  height: 26px;
-}
-.instagram {
-  background: url("../images/instagram-logo.svg") no-repeat;
-  width: 32px;
-  height: 32px;
-}
-.facebook {
-  background: url("../images/facebook-logo.svg") no-repeat;
-  width: 16px;
-  height: 32px;
 }

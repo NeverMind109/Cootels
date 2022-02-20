@@ -29,8 +29,10 @@
     height: 588px;
   }
   &__img {
+    width: 180px;
+    height: 588px;
     border-radius: 4px;
-    object-fit: cover;
+    object-fit: contain;
   }
   &__images-left {
     margin-right: 24px;

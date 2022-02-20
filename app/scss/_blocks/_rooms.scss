@@ -28,7 +28,9 @@
     margin-bottom: 32px;
   }
   &__card-img {
-    object-fit: cover;
+    width: 384px;
+    height: 489px;
+    object-fit: contain;
   }
   &__card-title {
     font-family: "Montserrat", sans-serif;
